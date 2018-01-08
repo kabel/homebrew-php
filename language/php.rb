@@ -1,5 +1,3 @@
-require File.expand_path("../../Requirements/php-meta-requirement", __FILE__)
-
 module Language
   module PHP
     module Composer

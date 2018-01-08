@@ -1,7 +1,7 @@
-require File.join(File.dirname(__FILE__), 'homebrew-php-requirement')
-
-class PharRequirement < HomebrewPhpRequirement
-  def satisfied?
+class PharRequirement < Requirement
+  fatal true
+  satisfy do
+    next false unless which("php")
     `php -m`.downcase.include? "phar"
   end
 
