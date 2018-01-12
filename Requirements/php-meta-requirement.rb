@@ -1,5 +1,4 @@
 class PhpMetaRequirement < Requirement
-  default_formula "php72"
   fatal true
   satisfy { which("php") }
 
